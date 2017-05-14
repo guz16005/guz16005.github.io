@@ -5,6 +5,46 @@
         <title>Weather Site </title>
     <meta name="description" content="CIT 230 - Franklin Weather Assignment">
     <meta name="viewport" content="width=device-width">
+        <style>
+            table {
+                width:100%;
+            }
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 5px;
+                text-align: left;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+                background-color: #111;
+            }
+
+            .active {
+                background-color: #4CAF50;
+            }
+        </style>
     </head>
     <body>
       <header>
@@ -27,8 +67,26 @@
             <h5 class="section-heading" >Current Conditions</h5>
             <h5 class="section-heading" >Wind: 1-5 MPH | Southwest</h5>
             <h5 class="section-heading" >Precipitation: 0 in</h5>
-                <div class="container">
-                    <div class="row">
+
+    <br>
+        <table>
+            <tr>
+                <th><h2>&#9925;Feeling Lucky?<br><p>Local Weather</p></h2></th>
+            </tr>
+            <tr>
+                <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#news">Franklin</a></li>
+                    <li><a href="#contact">Greenville</a></li>
+                    <li><a href="#about">Springfield</a></li>
+                    <li><a href="#about">Seach</a></li>
+                </ul>
+            </tr>
+            <tr>
+                <th>&#9728;Current Conditions
+                </th>
+            </tr>
+        </table>
         </main>
         <footer>&copy;2017 Weather Site</footer>
     </body>
