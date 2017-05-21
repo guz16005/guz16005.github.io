@@ -5,84 +5,74 @@
         <title>Weather Site </title>
     <meta name="description" content="CIT 230 - Franklin Weather Assignment">
     <meta name="viewport" content="width=device-width">
-        <style>
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-            }
-
-
-
-            li a {
-                display: block;
-                color: white;
-                text-align: left;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-            li {
-
-                display: block;
-                color: white;
-                text-align: left;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-        </style>
+    <link rel="stylesheet" type="text/css" href="screen.css"
     </head>
     <body>
       <header>
         <img src="plan-images/logo-blue.jpg">
-        <h1>Franklin, ID</h1>
+          <div class="title">
+              <h1><span>&#9856;</span><span>&#9861;</span> Feeling Lucky?</h1>
+              <h1>Local Weather</h1>
+          </div>
       </header>
         <nav>
             <ul>
                 <li><a href="../index.html" title="Home Page">Home</a></li>
+                <li><a href="#" title="Home Page">Franklin</a></li>
+                <li><a href="#" title="Home Page">Greenville</a></li>
+                <li><a href="#" title="Home Page">Springflied</a></li>
+                <li><a href="#" title="Home Page">Search</a></li>
             </ul>
         </nav>
         <main>
-            <div>
-                <p>Local Weather</p>
-            </div>
-            <p>City: Franklin</p>
-            <p>State: ID</p>
-            <p>High: 90</p>
-            <p>Low: 66</p>
-            <p>Precipiration: 0</p>
-            <p>Wind: 1-5mph</p>
-            <p>Direction: Southwest</p>
-            <p>Summary: Sunny</p>
-            <p>Hourly</p>
-            <ul>
-                <li>"0": 67,</li>
-                <li>"1": 67,</li>
-                <li>"2": 69,</li>
-                <li>"3": 69,</li>
-                <li>"4": 69,</li>
-                <li>"5": 70,</li>
-                <li>"6": 69,</li>
-                <li>"7": 72,</li>
-                <li>"8": 74,</li>
-                <li>"9": 77,</li>
-                <li>"10": 79,</li>
-                <li>"11": 81,</li>
-                <li>"12": 84,</li>
-                <li>"13": 86,</li>
-                <li>"14": 88,</li>
-                <li>"15": 90,</li>
-                <li>"16": 90,</li>
-                <li>"17": 85,</li>
-                <li>"18": 83,</li>
-                <li>"19": 79,</li>
-                <li>"20": 74,</li>
-                <li>"21": 70,</li>
-                <li>"22": 68,</li>
-                <li>"23": 66,</li>
-            </ul>
+            <section class = "overview">
+
+                    <h3>Franklin, ID</h3>
+
+                <p>90&deg;</p>
+                <p>90&deg;/66&deg;</p>
+                <p><b>Sunny</b></p>
+            </section>
+
+            <section class="cur_conditions">
+                <h2>Current Conditions</h2>
+                <p>Wind:</p>
+                <p align="center">1-5 Mph - Southwest</p>
+                <p>Precipitation:</p>
+                <p align = "center">0 in</p>
+            </section>
+
+            <section class="hourly">
+                <h2>Hourly Forecast</h2>
+                <ul>
+                    <li>"0": 67,</li>
+                    <li>"1": 67,</li>
+                    <li>"2": 69,</li>
+                    <li>"3": 69,</li>
+                    <li>"4": 69,</li>
+                    <li>"5": 70,</li>
+                    <li>"6": 69,</li>
+                    <li>"7": 72,</li>
+                    <li>"8": 74,</li>
+                    <li>"9": 77,</li>
+                    <li>"10": 79,</li>
+                    <li>"11": 81,</li>
+                    <li>"12": 84,</li>
+                    <li>"13": 86,</li>
+                    <li>"14": 88,</li>
+                    <li>"15": 90,</li>
+                    <li>"16": 90,</li>
+                    <li>"17": 85,</li>
+                    <li>"18": 83,</li>
+                    <li>"19": 79,</li>
+                    <li>"20": 74,</li>
+                    <li>"21": 70,</li>
+                    <li>"22": 68,</li>
+                    <li>"23": 66,</li>
+                </ul>
+            </section>
+
         </main>
-        <footer>&copy;2017 Weather Site</footer>
+        <footer>&copy;2017 Daniel Guzman </footer>
     </body>
 </html>
