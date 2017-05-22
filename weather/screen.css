@@ -89,9 +89,7 @@ main {
 }
 
 nav {
-
-
-    position:relative;
+    position: absolute;
     bottom: 0px;
     left: 0;
     right: 0;
