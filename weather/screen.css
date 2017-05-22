@@ -90,7 +90,8 @@ main {
 
 nav {
 
-    position: fixed;
+
+    position:relative;
     bottom: 0px;
     left: 0;
     right: 0;
