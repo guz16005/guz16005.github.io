@@ -23,31 +23,6 @@ body {
     font-family: Helvetica;
     font-size: 20px;
 }
-/*
-main {
-    display: flex;
-    flex-flow: flex;
-    align-items: center;
-}
-
-ul {
-    display: flex;
-}
-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-h1 {
-    text-align: right;
-}
-.title h1 + h1 {
-    text-align: right;
-}
-
-*/
-
 
 h1,
 h2,
@@ -83,7 +58,7 @@ main {
 }
 
 .hourly {
-    display:table;
+    display:none;
     color: aliceblue;
 
 }
