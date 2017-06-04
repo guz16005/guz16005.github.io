@@ -21,9 +21,12 @@ figure {
 body {
     margin: 0;
     padding: 0;
-    background-color: salmon;
+    background-color:blueviolet;
     font-family: Helvetica;
     font-size: 20px;
+    font-family: helvetica, arial, sans-serif;
+    background-size: cover;
+    background-repeat: none;
 }
 
 h1,
@@ -35,6 +38,23 @@ h6 {
     font-family: Sansita, "second choice", generic-family;
 }
 
+h1{
+    font-size: 1.2em;
+}
+
+
+h2{
+    font-size: 1.1em;
+}
+
+
+.bodywrap{
+
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+}
+
 
 .loc_box {
     background-color: rgba(200,200,200,.6);
@@ -44,11 +64,13 @@ h6 {
 }
 
 .temp_box,
-.cur_cond {
+.cur_cond,
+hourly {
     background-color: rgba(200,200,200,.6);
-    margin: .2em auto;
+    margin: 3em auto;
     border: 1px solid;
     border-radius: 5px;
+    width: 100%;
 }
 
 main {
@@ -59,11 +81,6 @@ main {
     background-size: cover;
 }
 
-.hourly {
-    display:none;
-    color: aliceblue;
-
-}
 
 nav {
     position: fixed;
@@ -73,16 +90,22 @@ nav {
     background-color: aqua;
     font-size: 20px;
     background-color: #F07C6C;
+    justify-content: center;
+    flex-flow: wrap;
 }
 
 nav ul {
+    list-style-type: none;
     display: flex;
-    font-size: 20px;
+    justify-content: space-around;
+    flex-flow: wrap;
+    line-height: .75em;
 }
 
-nav ul li {
-    margin-right: 50px;
+nav li {
+    flex: 1 1 5em;
 }
+
 
 
 .title h1 + h1 {
@@ -91,22 +114,57 @@ nav ul li {
     font-size: 20px;
 }
 
-p {
-    text-align: right;
+
+@media only screen and (min-width:650px){
+
+
+
+    .cur_conditions,
+    .hourly,
+    .location {
+        width: 33.3%;
+        text-align: left;
+        text-indent: 30pt;
+        background-size: cover;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+
+    }
+
+
+    nav {
+        position: relative;
+        padding: 1em;
+        padding: .25em;
+
+    }
+
+
+    main {
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: stretch;
+        padding: 0;
+        margin: 0;
+
+    }
+
+
 }
+
+
 
 
 header {
     background-color: #A6D8DB;
 }
 footer {
+    display: flex;
     padding: 20px;
     margin: 0 0 10px 0;
     height: 10px;
     font-size: 14px;
 }
 
-.rotate25 {
-    transform: rotate(25deg);
-    display: inline-block;
-}
+
