@@ -25,9 +25,65 @@ body {
     font-family: Helvetica;
     font-size: 20px;
     font-family: helvetica, arial, sans-serif;
+    background-image: url(plan-images/sunny.jpg);
     background-size: cover;
     background-repeat: none;
 }
+
+.bodywrap{
+
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+nav {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    background-color: #F07C6C;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    line-height: .75em;
+}
+
+
+
+nav li {
+    flex: 1 1 5em;
+}
+
+nav a:link {
+    color: whitesmoke;
+}
+
+
+nav a:visited {
+    color:black;
+}
+
+nav a:active {
+
+    color: blue;
+    background-color: #47556F;
+    font-size: 1.1em;
+}
+
+.title h1 + h1 {
+    text-align: right;
+    margin-top: -.7em;
+    font-size: 20px;
+}
+
 
 h1,
 h2,
@@ -47,31 +103,10 @@ h2{
     font-size: 1.1em;
 }
 
-
-.bodywrap{
-
-    display:flex;
-    flex-direction: column;
-    align-content: center;
+header {
+    background-color: #A6D8DB;
 }
 
-
-.loc_box {
-    background-color: rgba(200,200,200,.6);
-    margin: .2em auto;
-    border: 1px solid;
-    border-radius: 5px;
-}
-
-.temp_box,
-.cur_cond,
-hourly {
-    background-color: rgba(200,200,200,.6);
-    margin: 3em auto;
-    border: 1px solid;
-    border-radius: 5px;
-    width: 100%;
-}
 
 main {
     display: flex;
@@ -82,46 +117,27 @@ main {
 }
 
 
-nav {
-    position: fixed;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    background-color: aqua;
-    font-size: 20px;
-    background-color: #F07C6C;
-    justify-content: center;
-    flex-flow: wrap;
-}
-
-nav ul {
-    list-style-type: none;
+footer {
     display: flex;
-    justify-content: space-around;
-    flex-flow: wrap;
-    line-height: .75em;
+    font-size: 14px;
+    color:blueviolet;
 }
 
-nav li {
-    flex: 1 1 5em;
+.location_box,
+.current_conditions,
+.hourly {
+    background-color: rgba(200,200,200,.6);
+    margin: 3em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 100%;
 }
-
-
-
-.title h1 + h1 {
-    text-align: right;
-    margin-top: -.7em;
-    font-size: 20px;
-}
-
 
 @media only screen and (min-width:650px){
 
-
-
-    .cur_conditions,
-    .hourly,
-    .location {
+    .location_box,
+    .current_conditions,
+    .hourly {
         width: 33.3%;
         text-align: left;
         text-indent: 30pt;
@@ -140,7 +156,6 @@ nav li {
 
     }
 
-
     main {
         flex-flow: row wrap;
         justify-content: center;
@@ -149,22 +164,6 @@ nav li {
         margin: 0;
 
     }
-
-
-}
-
-
-
-
-header {
-    background-color: #A6D8DB;
-}
-footer {
-    display: flex;
-    padding: 20px;
-    margin: 0 0 10px 0;
-    height: 10px;
-    font-size: 14px;
 }
 
 
