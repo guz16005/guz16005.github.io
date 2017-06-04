@@ -16,6 +16,8 @@ figure {
     display: block;
 }
 
+
+/* flex-box:column; to put them in a column */
 body {
     margin: 0;
     padding: 0;
