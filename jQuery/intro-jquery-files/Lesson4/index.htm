@@ -8,42 +8,35 @@
     <script>
     $(function(){
         // jQuery Code goes here
-        //4.1 	// jQuery Code goes here
-        //console.log( $('input[type="text"]').css('background-color'));
-        //  var toggleStyle = function(){
-        /*
-            var inputFields = $('input[type="text"]');
 
-            if( inputFields.css('background-color') === 'rgb(255, 0, 0)' ){
-                // Set background color to white
-                inputFields.css('background-color', 'rgb(255, 255, 255)');
-            } else {
-                //Set background color to red
-               inputFields.css('background-color', 'rgb(255, 0, 0)');
+        console.log( $('input[type="text"]').css('background-color'));
+         var toggleStyle = function(){
+         var inputFields = $('input[type="text"]');
 
-            }
-        }
+             if( inputFields.css('background-color') === 'rgb(255, 0, 0)' )
+             {
+                    inputFields.css('background-color', 'rgb(255, 255, 255)');
+                 }
+                 else
+                 {
+                   inputFields.css('background-color', 'rgb(255, 0, 0)');
+                 }
+             }
         $('#ReqAQuoteBtn').click( toggleStyle );
-        */
 
-        //4.2
-
-        $(function(){
-            // append & appendTo
+        $(function()
+          {
             $('.coreValues').append("<li><strong>This is brand new !! </strong></li>");
             $("<li>l<strong> This is also great !! </strong></li>").appendTo(".coreValues");
-            // prepend & prependTo
-            // $('.coreValues').prepend("<li><strong>This is brand new !! </strong></li>");
-            //  $("<li>l<strong> This is also great !! </strong></li>").prependTo(".coreValues");
 
-            //form fields
             var nameVal = $('input[name="nameVal"]');
 
             function FillEmpty(){
-                if( nameVal.val() == '' ){
+                if( nameVal.val() == '' )
+                {
                     nameVal.val( 'John Gallman' );
                 }
-            }
+         }
 
             $('#ReqAQuoteBtn').click( FillEmpty );
 
