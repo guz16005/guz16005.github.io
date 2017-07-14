@@ -1,0 +1,90 @@
+/* Daniel Guzman */
+
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+*{
+  box-sizing: border-box;
+}
+
+#ACME {
+    background-image: url(../images/site/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Sansita', cursive;
+    font-size: 20px;
+    width: 95%;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+#pHeader{
+
+    background-color: #ffffff;
+    background-size: contain;
+    background-image: url(../images/site/logo.png);
+    height: 120px;
+    background-repeat: no-repeat;
+}
+
+#pNav {
+
+    display: flex;
+    background-color: #de2226;
+
+}
+
+#pNav ul{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: stretch;
+    list-style: none;
+    flex-grow: 1;
+    padding: 0;
+}
+
+#pNave a{
+    display: flex;
+    color:#ffffff;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#pNave a:hover {
+
+    color: #0000ee;
+}
+
+#contTitle {
+
+    padding-left: 10px;
+}
+
+#contTitle h2 {
+
+    display: flex;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#footer {
+
+    padding-left: 10px;
+    background-color: #ffffff;
+    background-size: contain;
+
+}
+
+
+
+
+
+
+
+
+
